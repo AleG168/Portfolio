@@ -1,21 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Une petite page HTML</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>Un titre de niveau 1</h1>
-        
-        <p>
-            Un premier petit paragraphe.
-        </p>
-        
-        <h2>Un titre de niveau 2</h2>
-        
-        <p>
-            Un autre paragraphe contenant un lien pour aller
-            sur le site <a href="http://koor.fr">KooR.fr</a>.
-        </p>
-    </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio BTS SIO - SLAM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mon Portfolio - BTS SIO SLAM</h1>
+</header>
+
+<nav>
+  <a href="#infos">Informations personnelles</a>
+  <a href="#parcours">Mon parcours scolaire</a>
+  <a href="#experiences">Mes expériences professionnelles</a>
+  <a href="#connaissances">Mes connaissances en système et réseau</a>
+  <a href="#competences">Mes compétences E6</a>
+</nav>
+
+<section id="infos">
+  <h2>Informations personnelles</h2>
+  <img src="images/photo-profil.jpg" alt="Photo de profil">
+  <p><a class="download" href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon profil LinkedIn</a></p>
+  <p><a class="download" href="cv.pdf" target="_blank">Télécharger mon CV</a></p>
+</section>
+
+<section id="parcours">
+  <h2>Mon parcours scolaire</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>2022 - Première NSI, Maths, LLCER</h3>
+      <img src="images/lycee.jpg" alt="Lycée Félix Le Dantec">
+      <p>Année de spécialisation scientifique et linguistique.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2023 - Terminale NSI, LLCER</h3>
+      <img src="images/lycee.jpg" alt="Lycée Félix Le Dantec">
+      <p>Confirmation des spécialités en informatique et anglais approfondi.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2024 - BTS SIO SLAM</h3>
+      <img src="images/lycee.jpg" alt="Lycée Félix Le Dantec">
+      <p>Début de ma formation en développement d'applications, retour très positif sur l’approche projet.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experiences">
+  <h2>Mes expériences professionnelles</h2>
+  <div class="project">
+    <h3>Projet 1 - Application de gestion</h3>
+    <img src="images/projet1.jpg" alt="Projet 1">
+    <p>Application web de gestion de tâches (HTML/CSS/JS + PHP/MySQL).</p>
+  </div>
+  <!-- Répète pour d'autres projets et stages -->
+</section>
+
+<section id="connaissances">
+  <h2>Mes connaissances en système et réseau</h2>
+  <ul>
+    <li>Installation de systèmes Linux et Windows</li>
+    <li>Configuration réseau (IP, DNS, DHCP)</li>
+    <li>Virtualisation (VirtualBox, Hyper-V)</li>
+    <li>Commandes Shell, PowerShell</li>
+    <li>Services réseaux (Apache, FTP, SSH...)</li>
+  </ul>
+
+  <div class="skills-bar">
+    <p>Linux :</p>
+    <div class="bar"><div class="bar-inner" style="width: 80%;"></div></div>
+    <p>Windows Server :</p>
+    <div class="bar"><div class="bar-inner" style="width: 70%;"></div></div>
+    <p>Virtualisation :</p>
+    <div class="bar"><div class="bar-inner" style="width: 60%;"></div></div>
+  </div>
+</section>
+
+<section id="competences">
+  <h2>Mes compétences E6</h2>
+  <p><a class="download" href="e6-grille.xlsx" download>Télécharger la grille de compétences E6</a></p>
+</section>
+
+<footer>
+  <p>© 2025 - Portfolio BTS SIO SLAM</p>
+</footer>
+
+</body>
 </html>
